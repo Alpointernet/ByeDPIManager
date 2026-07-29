@@ -27,7 +27,7 @@ Bu seçenek gerekli tüm bileşenleri tek bir arşivin içinde toplar.
 
 2. **Arşivden çıkarma:**
 
-   * Bilgisayarınızdaki indirilmiş dosyaya gidin
+   * Bilgisayarınızdaki indirilmiş dosyaya gidin.
    * Sağ tıklayın ve “Tümünü Ayıkla…” seçeneğini seçin.
    * Bir kurulum klasörü seçin (ör. `C:\APPS\ByeDPIManager`)
 
@@ -108,27 +108,27 @@ Eğer hazır tanımlanmış bir stratejiniz yoksa, yerleşik test aracını kull
 
    * `proxytest` klasöründeki dosyaları düzenleyin:
 
-     * `sites.txt` – kendi istediğiniz siteleri teste ekleyin
-     * `cmds.txt` – kontrol etmek için kendi stratejilerinizi ekleyin
+     * `sites.txt` – kendi istediğiniz siteleri teste ekleyin.
+     * `cmds.txt` – kontrol etmek için kendi stratejilerinizi ekleyin.
 
 ### Başlatın ve Test Edin
 
 1. **Etkinleştirin:**
 
-   * Ana pencerede “Bağlan” düğmesine basın
+   * Ana pencerede “Bağlan” düğmesine basın.
    * İlk çalıştırmada, ProxiFyre internet izni isteyecek – “İzin ver” düğmesine tıklayın.
 
 2. **Çalıştığından emin olun:**
 
-   * Yapılandırdığınız tarayıcı veya uygulamayı açın
-   * Sitelerin veya hizmetlerin erişilebilir olduğunu doğrulayın
+   * Yapılandırdığınız tarayıcı veya uygulamayı açın.
+   * Sitelerin veya hizmetlerin erişilebilir olduğunu doğrulayın.
 
 ## Sorun Giderme
 
-* Eğer uygulama başlamazsa, .NET Framework 4.7.2+ yüklü olduğundan emin olun
-* Eğer engel aşma çalışmazsa, başka bir strateji deneyin
-* Eğer bağlantı sorunları olursa, Windows Packet Filter'ın doğru şekilde yüklendiğinden emin olun 
-* Antivirüs veya güvenlik duvarınızın uygulamayı engellemediğinden emin olun
+* Eğer uygulama başlamazsa, .NET Framework 4.7.2+ yüklü olduğundan emin olun.
+* Eğer engel aşma çalışmazsa, başka bir strateji deneyin.
+* Eğer bağlantı sorunları olursa, Windows Packet Filter'ın doğru şekilde yüklendiğinden emin olun.
+* Antivirüs veya güvenlik duvarınızın uygulamayı engellemediğinden emin olun.
 
 ## Özel Teşekkür
 
