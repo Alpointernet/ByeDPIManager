@@ -1,136 +1,136 @@
 # ByeDPI Manager
 
-[Русский](README.md) | [English](README.en.md) | Türkçe
+[Русский](README.md) | English
 
-ByeDPI ve ProxiFyre'ı çalıştırmak için küçük bir araç.
+A mini utility for running ByeDPI and ProxiFyre.
 
 ![Interface Screenshot](screens/screen_en.png)
 
-## Gereksinimler
+## Requirements
 
 1. Windows 7+, [.NET Framework 4.7.2+](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net472-offline-installer)
 2. [ProxiFyre](https://github.com/wiresock/proxifyre), [Windows Packet Filter](https://github.com/wiresock/ndisapi), [Visual C++ Redist 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version)
 3. [ByeDPI](https://github.com/hufrea/byedpi)
 
-## Kurulum
+## Installation
 
-* Topluluk tarafından hazırlanan kurulum rehberi: [ByeDPI Manager Manual](https://github.com/BDManual/ByeDPIManager-Manual)
+* Instructions from the community [ByeDPI Manager Manual](https://github.com/BDManual/ByeDPIManager-Manual)
 
-### Seçenek 1: All-in-One (Başlangıç için önerilir)
+### Option 1: All-in-One (Recommended for beginners)
 
-Bu seçenek gerekli tüm bileşenleri tek bir arşivin içinde toplar.
+This option includes all necessary components in a single archive.
 
-1. **İndirme:**
+1. **Download:**
 
-   * Sürümler sayfasına gidin: [https://github.com/romanvht/ByeDPIManager/releases/latest](https://github.com/romanvht/ByeDPIManager/releases/latest)
-   * `All_In_One_w64.zip` dosyasını indirin.
+   * Go to the release page: [https://github.com/romanvht/ByeDPIManager/releases/latest](https://github.com/romanvht/ByeDPIManager/releases/latest)
+   * Download the `All_In_One_w64.zip` file
 
-2. **Arşivden çıkarma:**
+2. **Extraction:**
 
-   * Bilgisayarınızdaki indirilmiş dosyaya gidin
-   * Sağ tıklayın ve “Tümünü Ayıkla…” seçeneğini seçin.
-   * Bir kurulum klasörü seçin (ör. `C:\APPS\ByeDPIManager`)
+   * Locate the downloaded file on your computer
+   * Right-click and select “Extract All…”
+   * Choose an installation folder (e.g., `C:\APPS\ByeDPIManager`)
 
-3. **Bağımlılıkları yükleme:**
+3. **Installing dependencies:**
 
-   * Ayıklanmış arşivin içindeki `redist` klasörünü açın. 
-   * Bu klasörün içindeki iki uygulamayı da kurun:
+   * Open the `redist` folder inside the extracted archive
+   * Install both apps from this folder:
 
-     * Windows Packet Filter (ProxiFyre için gerekli)
+     * Windows Packet Filter (required for ProxiFyre)
      * Visual C++ Redistributable 2022
 
-### Seçenek 2: Manuel Kurulum (Gelişmiş kullanıcılar için)
+### Option 2: Manual Installation (For advanced users)
 
-Bileşenleri ayrı bir şekilde yönetmeyi tercih ediyorsanız:
+If you prefer managing components separately:
 
-1. **Bileşenleri ayrıca indirin:**
+1. **Download components separately:**
 
    * [Manager](https://github.com/romanvht/ByeDPIManager/releases/latest)
    * [ByeDPI](https://github.com/hufrea/byedpi)
    * [ProxiFyre](https://github.com/wiresock/proxifyre)
 
-2. **Bağımlılıkları yükleyin:**
+2. **Install dependencies:**
 
-   * [Windows Packet Filter](https://github.com/wiresock/ndisapi) (ProxiFyre için gerekli)
+   * [Windows Packet Filter](https://github.com/wiresock/ndisapi) (Required for ProxiFyre)
    * [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version)
 
-3. **Tüm bileşenleri uygun klasörlere ayıklayın**
+3. **Extract all components into convenient folders**
 
-4. **Çalıştırın ve yolları ayarlayın:**
+4. **Run and set paths:**
 
-   * ByeDPI sekmesinde `ciadpi.exe` için doğru yolu belirtin. 
-   * ProxiFyre sekmesinde `proxifyre.exe` için doğru yolu belirtin. 
+   * Specify the correct path to `ciadpi.exe` in the ByeDPI tab
+   * Specify the correct path to `proxifyre.exe` in the ProxiFyre tab
 
-## Yapılandırma
+## Configuration
 
-### İlk kurulum
+### Initial Setup
 
-1. **Uygulamayı başlatın:**
+1. **Launch the program:**
 
-   * `ByeDPI Manager.exe`'yi çalıştırın.
-   * "Ayarlar" düğmesine tıklayın.
+   * Run `ByeDPI Manager.exe`
+   * Click the "Settings" button
 
-2. **ProxiFyre kurulumu:**
+2. **ProxiFyre setup:**
 
-   * “ProxiFyre” sekmesine gidin.
-   * Engeli aşılacak uygulamaları seçin (ör. Chrome, Firefox vb.)
+   * Go to the “ProxiFyre” tab
+   * Specify applications to be bypassed (e.g., Chrome, Firefox, etc.)
 
-### Strateji Yapılandırması
+### Strategy Configuration
 
-#### Hazır tanımlanmış stratejiyi kullanma
+#### Using a predefined strategy
 
-* “ByeDPI” sekmesindeki “Parametreler” alanına istediğiniz stratejiyi girin.
+* Enter the desired strategy in the “Arguments” field on the “ByeDPI” tab
 
-#### Strateji Testi (isteğe bağlı)
+#### Strategy testing (optional)
 
-Eğer hazır tanımlanmış bir stratejiniz yoksa, yerleşik test aracını kullanabilirsiniz.
+If you don’t have a predefined strategy, you can use the built-in tester:
 
-1. **Test aracı sekmesine gidin:**
+1. **Go to the tester tab:**
 
-   * “Denemeler (Beta)” sekmesini açın 
+   * Open the “Strategy Test (Beta)” tab
 
-2. **Testi başlatın:**
+2. **Start test:**
 
-   * “Başla” düğmesine tıklayın.
-   * İlk çalıştırmada, `ciadpi.exe` için internet izni vermeniz istenecek – “İzin ver” düğmesine tıklayın.
+   * Click “Start”
+   * The first time you run it, you’ll be asked to allow `ciadpi.exe` network access – click “Allow”
 
-3. **Bir strateji seçin:**
+3. **Select a strategy:**
 
-   * Test bittikten sonra, başarı oranı %50'nin üstünde olan stratejiler günlük bölümünde listelenecektir.
-   * En iyisini seçin ve kopyalayın (Ctrl+C)
+   * After the test completes, strategies with over 50% success will be listed in the log
+   * Select the best one and copy it (Ctrl+C)
 
-4. **Stratejiyi uygulayın:**
+4. **Apply the strategy:**
 
-   * “ByeDPI” sekmesine geri gidin. 
-   * Kopyaladığınız stratejiyi “Parametreler” alanına yapıştırın (Ctrl+V)
+   * Go back to the “ByeDPI” tab
+   * Paste the copied strategy into the “Arguments” field (Ctrl+V)
 
-5. **Testi özelleştirin (isteğe bağlı):**
+5. **Customize testing (optional):**
 
-   * `proxytest` klasöründeki dosyaları düzenleyin:
+   * Edit the files in the `proxytest` folder:
 
-     * `sites.txt` – kendi istediğiniz siteleri teste ekleyin
-     * `cmds.txt` – kontrol etmek için kendi stratejilerinizi ekleyin
+     * `sites.txt` – add your own sites to test
+     * `cmds.txt` – add your own strategies to check
 
-### Başlatın ve Test Edin
+### Launch and Test
 
-1. **Etkinleştirin:**
+1. **Activate:**
 
-   * Ana pencerede “Bağlan” düğmesine basın
-   * İlk çalıştırmada, ProxiFyre internet izni isteyecek – “İzin ver” düğmesine tıklayın.
+   * In the main window, click “Connect”
+   * The first time, ProxiFyre will ask for network access – click “Allow”
 
-2. **Çalıştığından emin olun:**
+2. **Verify it’s working:**
 
-   * Yapılandırdığınız tarayıcı veya uygulamayı açın
-   * Sitelerin veya hizmetlerin erişilebilir olduğunu doğrulayın
+   * Open a browser or app you configured
+   * Check if the resources are accessible
 
-## Sorun Giderme
+## Troubleshooting
 
-* Eğer uygulama başlamazsa, .NET Framework 4.7.2+ yüklü olduğundan emin olun
-* Eğer engel aşma çalışmazsa, başka bir strateji deneyin
-* Eğer bağlantı sorunları olursa, Windows Packet Filter'ın doğru şekilde yüklendiğinden emin olun 
-* Antivirüs veya güvenlik duvarınızın uygulamayı engellemediğinden emin olun
+* If the app won’t start, ensure .NET Framework 4.7.2+ is installed
+* If bypassing doesn’t work, try a different strategy
+* If connection issues occur, ensure Windows Packet Filter is installed properly
+* Make sure your antivirus or firewall isn’t blocking the app
 
-## Özel Teşekkür
+## Special Thanks
 
 * [ByeDPI](https://github.com/hufrea/byedpi)
 * [ProxiFyre](https://github.com/wiresock/proxifyre)
